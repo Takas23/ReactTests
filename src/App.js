@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import { Table } from './Components/Table';
+import { Menu } from './Components/Menu';
+import { ReactTable } from './Components/ReactTable';
+import { SortingReactTable } from './Components/SortingReactTable';
+
+
+/* TEST
+//DATOS arreglo de objetos con datos
+const data = [
+  {
+    id: 1,
+    name: "rocky",
+    age: 22
+  },
+  {
+    id: 2,
+    name: "balboa",
+    age: 28
+  },
+  {
+    id: 3,
+    name: "rambo",
+    age: 30
+  }
+];
+//COLUMNAS arreglo de objetos con el dato de la columna
+const columns = [
+  {
+    name: "NOMBRE",
+    selector: row => row.name
+  },
+  {
+    name: "EDAD",
+    selector: row => row.age
+  }
+]
+*/
+
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <SortingReactTable/>
+
+      {/* <ReactTable/> */}
+
+      {/* <Table /> */}
+
+      {/* <Menu/> */}
+
     </div>
+
   );
 }
 

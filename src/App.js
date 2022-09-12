@@ -4,6 +4,7 @@ import { Table } from './Components/Table';
 import { Menu } from './Components/Menu';
 import { ReactTable } from './Components/ReactTable';
 import { SortingReactTable } from './Components/SortingReactTable';
+import { ColumnHideReactTable } from './Components/ColumnHideReactTable';
 
 
 /* TEST
@@ -43,7 +44,9 @@ const App = () => {
   return (
     <div className="App">
 
-      <SortingReactTable/>
+      <ColumnHideReactTable/>
+
+      {/* <SortingReactTable/> */}
 
       {/* <ReactTable/> */}
 
